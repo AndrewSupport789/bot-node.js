@@ -1,5 +1,5 @@
 const { Client, RichEmbed } = require("discord.js");
-
+const token = process.env.token;
 const client = new Client({
     disableEveryone: true
 })
@@ -114,4 +114,4 @@ client.on("message", async message => {
     }
 });
 
-client.login('NjQ2MzA4NDc2NDg1ODk0MTc2.XdQqZg.7QoD3-D6grCb-Uxpr6Ao7jcAhDY');
+client.login(token).catch(err => console.log(err));
