@@ -114,4 +114,29 @@ client.on("message", async message => {
     }
 });
 
+
+
+
+    path.exists(filePath, function(exists) {
+
+        if (exists) {
+            fs.readFile(filePath, function(error, content) {
+                if (error) {
+                    response.writeHead(500);
+                    response.end();
+                }
+                else {
+                    response.writeHead(200, { 'Content-Type': contentType });
+                    response.end(content, 'utf-8');
+                }
+            });
+        }
+        else {
+            response.writeHead(404);
+            response.end();
+        }
+    });
+
+ }).listen(5000);
+
 client.login(token).catch(err => console.log(err));
