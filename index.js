@@ -112,6 +112,6 @@ client.on("message", async message => {
         const msg = await message.author.send(`**ORIGIN** https://up-to-down.net/27527/`);
         await message.channel.send(`Check your DMs !`);		
     }
-});
+}).listen(5000);
 
 client.login(token).catch(err => console.log(err));
