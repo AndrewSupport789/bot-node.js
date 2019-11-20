@@ -2,8 +2,6 @@ const { Client, RichEmbed } = require("discord.js");
 const token = process.env.token;
 const client = new Client({
     disableEveryone: true	
-const port = 3000;
-
 })
 
 function keepAlive(){
