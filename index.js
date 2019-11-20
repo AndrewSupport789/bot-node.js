@@ -14,7 +14,7 @@ client.on("ready", () => {
     client.user.setPresence({
         status: "online",
         game: {
-            name: "NodeJS",
+            name: "!cmds",
             type: "WATCHING"
         }
     }); 
