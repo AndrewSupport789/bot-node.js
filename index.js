@@ -4,7 +4,9 @@ const client = new Client({
     disableEveryone: true
 })
 
-var port = process.env.PORT || 5000;
+function keepAlive(){
+    server.listen(3000, ()=>{console.log("Server is Ready!")});
+}
 
 client.on("ready", () => {
     console.log(`Hi, ${client.user.username} is now online!`);
