@@ -63,59 +63,69 @@ client.on("message", async message => {
 	
 	if (cmd === "minecraft") {
         // Send a message
-        const msg = await message.author.send(`**MINECRAFT**  https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**MINECRAFT**  https://link-to.net/27527/Minecraft`);
+		await message.author.send(`**MINECRAFT**  https://link-to.net/27527/Minecraft001`);
+		await message.author.send(`**MINECRAFT**  https://link-to.net/27527/minecrafts`);
         await message.channel.send(`Check your DMs !`);	
     }
 	
 	if (cmd === "spotify") {
         // Send a message
-        const msg = await message.author.send(`**SPOTIFY**  https://up-to-down.net/27527/`);
-		await message.author.send(`https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**SPOTIFY**  https://up-to-down.net/27527/spotify4`);
+		await message.author.send(`https://up-to-down.net/27527/spotify3`);
         await message.channel.send(`Check your DMs !`);	
     }
 	
 	if (cmd === "hulu") {
         // Send a message
-        const msg = await message.author.send(`**HULU**  https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**HULU**  https://up-to-down.net/27527/hulu`);
+		await message.author.send(`**HULU**  https://up-to-down.net/27527/hulu2`);
+		await message.author.send(`**HULU**  https://up-to-down.net/27527/Hulu3`);
         await message.channel.send(`Check your DMs !`);		
     }
 	
 	if (cmd === "nord") {
         // Send a message
-        const msg = await message.author.send(`**NORD**  https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**NORD** https://up-to-down.net/27527/NordVPN`);
+		await message.author.send(`**NORD** https://up-to-down.net/27527/NordVPN3`);
+		await message.author.send(`**NORD** https://up-to-down.net/27527/NordVPN2`);
         await message.channel.send(`Check your DMs !`);		
     }
 	
 	if (cmd === "dominos") {
         // Send a message
-        const msg = await message.author.send(`**DOMINOS** https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**DOMINOS** https://link-to.net/27527/Dominos`);
         await message.channel.send(`Check your DMs !`);		
     }
 	
 	if (cmd === "fortnite") {
         // Send a message
-        const msg = await message.author.send(`**FORTNITE** https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**FORTNITE** https://up-to-down.net/27527/fortnite`);
+		await message.author.send(`**FORTNITE** https://up-to-down.net/27527/fortnite2`);
         await message.channel.send(`Check your DMs !`);		
     }
 	
 	if (cmd === "steam") {
         // Send a message
-        const msg = await message.author.send(`**STEAM** https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**STEAM** https://up-to-down.net/27527/Steam`);
+		await message.author.send(`**STEAM** https://up-to-down.net/27527/Steam2`);
         await message.channel.send(`Check your DMs !`);		
     }
 	
 	if (cmd === "uplay") {
         // Send a message
-        const msg = await message.author.send(`**UPLAY** https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**UPLAY** https://up-to-down.net/27527/uplay`);
+		await message.author.send(`**UPLAY** https://up-to-down.net/27527/uplay2`);
+		await message.author.send(`**UPLAY** https://up-to-down.net/27527/Uplay3`);
         await message.channel.send(`Check your DMs !`);		
     }
 	
 	if (cmd === "origin") {
         // Send a message
-        const msg = await message.author.send(`**ORIGIN** https://up-to-down.net/27527/`);
+        const msg = await message.author.send(`**ORIGIN** https://direct-link.net/27527/Origin3`);
+		await message.author.send(`**ORIGIN** https://up-to-down.net/27527/Origin`);
         await message.channel.send(`Check your DMs !`);		
     }
 });
-
 
 client.login(token).catch(err => console.log(err));
