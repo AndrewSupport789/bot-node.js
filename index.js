@@ -291,4 +291,4 @@ client.on("message", async message => {
     }
 });
 
-client.login(var key = process.env.api_key);
+client.login(process.env.api_key);
