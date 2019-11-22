@@ -260,7 +260,7 @@ client.on("message", async message => {
        // Send a message
         const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setTitle('Origin')
+	.setTitle('Help')
 	.setURL('http://rabbits-gen.club/commands.html')
 	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
 	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
@@ -273,11 +273,11 @@ client.on("message", async message => {
 		mss.edit(`**Commands Sent**`);	
     }
 	
-	if (cmd === "help") {
+	if (cmd === "Help") {
        // Send a message
         const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
-	.setTitle('Origin')
+	.setTitle('Help')
 	.setURL('http://rabbits-gen.club/commands.html')
 	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
 	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
