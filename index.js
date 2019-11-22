@@ -273,7 +273,7 @@ client.on("message", async message => {
 		mss.edit(`**Commands Sent**`);	
     }
 	
-	if (cmd === "Help") {
+	if (cmd === "help") {
        // Send a message
         const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#0099ff')
