@@ -1,24 +1,28 @@
 const { Client, RichEmbed } = require("discord.js");
-const token = process.env.token;
+const Discord = require('discord.js');
 const client = new Client({
-    disableEveryone: true	
+    disableEveryone: true
 })
+
+
+
+
+
 
 function keepAlive(){
     server.listen(3000, ()=>{console.log("Server is Ready!")});
 }
 
-client.on("ready", () => {
-    console.log(`Hi, ${client.user.username} is now online!`);
-
+client.on('ready', () => {
+    client.user.setStatus('dnd')
     client.user.setPresence({
-        status: "online",
         game: {
-            name: "!cmds",
-            type: "WATCHING"
+            name: '!cmds',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/itzsmartin"
         }
-    }); 
-})
+    });
+});
 
 client.on("message", async message => {
     const prefix = "!";
@@ -49,82 +53,241 @@ client.on("message", async message => {
 	
 	
 	
-	if (cmd === "durlax") {
+	if (cmd === "nord") {
         // Send a message
-        const msg = await message.author.send(`Durlax? He is cool guy! UwU`);	
-		await message.channel.send(`DMs buddy!`);
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('NordVPN')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/NordVPN', true)
+	.addField('ACCOUNT LIST #2', 'https://up-to-down.net/27527/NordVPN2')
+	.addField('ACCOUNT LIST #3', 'https://up-to-down.net/27527/NordVPN3', true)
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "eset") {
         // Send a message
-		const msg = await message.author.send(`**ESET** https://up-to-down.net/27527/`);
-        await message.channel.send(`Check your DMs !`);	
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Eset keys')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('LIST #1', 'https://link-to.net/27527/esetkeys')
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "minecraft") {
-        // Send a message
-        const msg = await message.author.send(`**MINECRAFT**  https://link-to.net/27527/Minecraft`);
-		await message.author.send(`**MINECRAFT**  https://link-to.net/27527/Minecraft001`);
-		await message.author.send(`**MINECRAFT**  https://link-to.net/27527/minecrafts`);
-        await message.channel.send(`Check your DMs !`);	
-    }
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Minecraft')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://link-to.net/27527/Minecraft001', true)
+	.addField('ACCOUNT LIST #2', 'https://link-to.net/27527/Minecraft')
+	.addField('ACCOUNT LIST #3', 'https://link-to.net/27527/minecrafts', true)
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
+    }	
 	
 	if (cmd === "spotify") {
-        // Send a message
-        const msg = await message.author.send(`**SPOTIFY**  https://up-to-down.net/27527/spotify4`);
-		await message.author.send(`https://up-to-down.net/27527/spotify3`);
-        await message.channel.send(`Check your DMs !`);	
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Spotify')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/spotify4', true)
+	.addField('ACCOUNT LIST #2', 'https://up-to-down.net/27527/spotify3')
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "hulu") {
-        // Send a message
-        const msg = await message.author.send(`**HULU**  https://up-to-down.net/27527/hulu`);
-		await message.author.send(`**HULU**  https://up-to-down.net/27527/hulu2`);
-		await message.author.send(`**HULU**  https://up-to-down.net/27527/Hulu3`);
-        await message.channel.send(`Check your DMs !`);		
-    }
-	
-	if (cmd === "nord") {
-        // Send a message
-        const msg = await message.author.send(`**NORD** https://up-to-down.net/27527/NordVPN`);
-		await message.author.send(`**NORD** https://up-to-down.net/27527/NordVPN3`);
-		await message.author.send(`**NORD** https://up-to-down.net/27527/NordVPN2`);
-        await message.channel.send(`Check your DMs !`);		
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Hulu')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/hulu', true)
+	.addField('ACCOUNT LIST #2', 'https://up-to-down.net/27527/hulu2')
+	.addField('ACCOUNT LIST #3', 'https://up-to-down.net/27527/Hulu3', true)
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "dominos") {
-        // Send a message
-        const msg = await message.author.send(`**DOMINOS** https://link-to.net/27527/Dominos`);
-        await message.channel.send(`Check your DMs !`);		
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Dominos')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://link-to.net/27527/Dominos')
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "fortnite") {
-        // Send a message
-        const msg = await message.author.send(`**FORTNITE** https://up-to-down.net/27527/fortnite`);
-		await message.author.send(`**FORTNITE** https://up-to-down.net/27527/fortnite2`);
-        await message.channel.send(`Check your DMs !`);		
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Fortnite')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/fortnite', true)
+	.addField('ACCOUNT LIST #2', 'https://up-to-down.net/27527/fortnite2')
+	.addField('ACCOUNT LIST #3', 'https://up-to-down.net/27527/fortnite02', true)
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "steam") {
-        // Send a message
-        const msg = await message.author.send(`**STEAM** https://up-to-down.net/27527/Steam`);
-		await message.author.send(`**STEAM** https://up-to-down.net/27527/Steam2`);
-        await message.channel.send(`Check your DMs !`);		
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Steam')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/Steam', true)
+	.addField('ACCOUNT LIST #2', 'https://up-to-down.net/27527/Steam2')
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "uplay") {
-        // Send a message
-        const msg = await message.author.send(`**UPLAY** https://up-to-down.net/27527/uplay`);
-		await message.author.send(`**UPLAY** https://up-to-down.net/27527/uplay2`);
-		await message.author.send(`**UPLAY** https://up-to-down.net/27527/Uplay3`);
-        await message.channel.send(`Check your DMs !`);		
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Uplay')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/uplay', true)
+	.addField('ACCOUNT LIST #2', 'https://up-to-down.net/27527/uplay2')
+	.addField('ACCOUNT LIST #3', 'https://up-to-down.net/27527/Uplay3', true)
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
 	if (cmd === "origin") {
-        // Send a message
-        const msg = await message.author.send(`**ORIGIN** https://direct-link.net/27527/Origin3`);
-		await message.author.send(`**ORIGIN** https://up-to-down.net/27527/Origin`);
-        await message.channel.send(`Check your DMs !`);		
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Origin')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('ACCOUNT LIST #1', 'https://up-to-down.net/27527/Origin', true)
+	.addField('ACCOUNT LIST #2', 'https://direct-link.net/27527/Origin3')
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
+    }
+	
+	if (cmd === "cmds") {
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Origin')
+	.setURL('http://rabbits-gen.club/commands.html')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('visit http://rabbits-gen.club/commands.html for all commands!')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Sending....`);
+		
+		mss.edit(`**Commands Sent**`);	
+    }
+	
+	if (cmd === "help") {
+       // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Origin')
+	.setURL('http://rabbits-gen.club/commands.html')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('visit http://rabbits-gen.club/commands.html for all commands!')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Sending....`);
+		
+		mss.edit(`**Commands Sent**`);	
     }
 });
 
