@@ -311,4 +311,9 @@ client.on("message", async message => {
 	
 });
 
+
+client.on('guildMemberAdd', member => {
+    member.send("Welcome on our server, please check our Shop with cheap alts! http://rabbits-alts.cf"); 
+});
+
 client.login(process.env.api_key);
