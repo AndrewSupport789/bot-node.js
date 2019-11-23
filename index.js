@@ -291,7 +291,7 @@ client.on("message", async message => {
     }
 	
 	if(cmd === "+ban") {
-        if(!message.member.roles.some(r=>['642419003448360980'].includes(r.id)) )
+        if(!message.member.roles.some(r=>['618493654813900811'].includes(r.id)) )
 	return message.reply("Sorry, you don't have permissions to use this!");
 
 	let member = message.mentions.members.first();
