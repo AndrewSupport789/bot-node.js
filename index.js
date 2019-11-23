@@ -313,7 +313,7 @@ client.on("message", async message => {
 
 
 client.on('guildMemberAdd', member => {
-    member.send("Welcome on our server, please check our Shop with cheap alts! http://rabbits-alts.cf"); 
+    member.send(`Welcome on our server ${member.user.tag} visit http://rabbits-alts.cf for cheap alts! or our Shoppy! http://shoppy.gg/BadRabbit001`);
 });
 
 client.login(process.env.api_key);
