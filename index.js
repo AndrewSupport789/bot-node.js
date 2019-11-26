@@ -93,6 +93,26 @@ client.on("message", async message => {
 		mss.edit(`**Generated check ur DMs!**`);	
     }
 	
+	if (cmd === "crunchyroll") {
+        // Send a message
+        const exampleEmbed = new Discord.RichEmbed()
+	.setColor('#0099ff')
+	.setTitle('Crunchyroll')
+	.setURL('http://rabbits-alts.cf')
+	.setAuthor('DevilGen generated account for you!', 'https://i.imgur.com/Xjp3oMy.jpg', 'https://rabbits-alts.cf')
+	.setThumbnail('https://i.imgur.com/Xjp3oMy.jpg')
+	.setDescription('==========================================')
+	.addField('LIST #1', 'https://link-to.net/27527/crunchyroll')
+	.addField('LIST #2', 'https://link-to.net/27527/crunchyroll2')
+	.addField('You need help?', 'https://youtu.be/kJbWiPKP_gg')
+	.setTimestamp()
+	.setFooter('BlackRabbit001#7046');
+        await message.author.send(exampleEmbed);
+		const mss = await message.channel.send(`Generating....`);
+		
+		mss.edit(`**Generated check ur DMs!**`);	
+    }
+	
 	if (cmd === "minecraft") {
        // Send a message
         const exampleEmbed = new Discord.RichEmbed()
