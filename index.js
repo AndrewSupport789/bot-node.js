@@ -17,7 +17,7 @@ client.on('ready', () => {
     client.user.setStatus('dnd')
     client.user.setPresence({
         game: {
-            name: '!cmds',
+            name: '!cmds /CRUNCHYROLL ADDED!/',
             type: "STREAMING",
             url: "https://www.twitch.tv/abc"
         }
